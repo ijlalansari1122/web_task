@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: #ff6600 3px solid;
+}
+
+header .logo img {
+    float: left;
+    margin-left: 20px;
+}
+
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* About Me Section */
+.about-me {
+    padding: 20px 0;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.bio {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.bio img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 20px 0;
+    background-color: #e4e4e4;
+    margin-top: 20px;
+}
+
+.projects table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects table, th, td {
+    border: 1px solid #ddd;
+}
+
+.projects th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+.projects th {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* Contact/Feedback Form Section */
+.contact {
+    padding: 20px 0;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact form input[type="text"],
+.contact form textarea,
+.contact form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form input[type="submit"] {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form input[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .logo, header nav {
+        float: none;
+        text-align: center;
+    }
+    
+    .bio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .bio img {
+        margin-bottom: 20px;
+    }
+}

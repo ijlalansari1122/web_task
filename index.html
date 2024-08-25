@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Python Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/6378220.jpg" alt="My Logo" width="60" height="60">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="bio">
+                <img src="/c1QmE8jDbbFtX0_uZBvDQx3iGCPSquy_5pQ2GHYGbeFamXvyGQjKHiQqPMeUD6xdiz.jpeg" alt="Your Photo">
+                <p>Hello! I'm Ijlal Ansari, a BSSE student at KIU Gilgit with a strong interest in web development and data science. I'm currently working on various programming projects and expanding my skills in Python, web development, and data mining. In my spare time, I enjoy exploring new technologies and tackling coding challenges. Feel free to connect with me or learn more about my work!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Key Features</th>
+                </tr>
+                <tr>
+                    <td>To-Do List</td>
+                    <td>A simple to-do list app to manage tasks.</td>
+                    <td>Task addition, deletion, and completion tracking.</td>
+                </tr>
+                <tr>
+                    <td>Number Guessing Game</td>
+                    <td>A fun game where users guess a randomly generated number.</td>
+                    <td>Random number generation, user input, feedback loop.</td>
+                </tr>
+                <tr>
+                    <td>Simple LMS</td>
+                    <td>A library management system to handle book checkouts and returns.</td>
+                    <td>Book cataloging, user management, transaction history.</td>
+                </tr>
+                <tr>
+                    <td>Password Generator</td>
+                    <td>A tool to generate secure, random passwords.</td>
+                    <td>Password length selection, inclusion of special characters.</td>
+                </tr>
+                <tr>
+                    <td>Grade Generator</td>
+                    <td>A program to calculate grades based on scores.</td>
+                    <td>Score input, grade calculation, and output.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Feedback Form</h2>
+            <form action="http://127.0.0.1:5500/index.html">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="project">Which project did you try?</label>
+                <select id="project" name="project">
+                    <option value="todo-list">To-Do List</option>
+                    <option value="number-guessing-game">Number Guessing Game</option>
+                    <option value="simple-lms">Simple LMS</option>
+                    <option value="password-generator">Password Generator</option>
+                    <option value="grade-generator">Grade Generator</option>
+                </select><br>
+
+                <label for="remarks">Remarks:</label><br>
+                <textarea id="remarks" name="remarks"></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
