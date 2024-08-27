@@ -41,3 +41,4 @@ async function fetchGitHubProjects() {
         document.getElementById('projects-container').innerHTML = '<tr><td colspan="3">Failed to load projects.</td></tr>';
     }
 }
+

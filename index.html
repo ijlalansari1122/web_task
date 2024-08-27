@@ -15,11 +15,10 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#project">Projects</a></li>
                 <li><a href="#journey">My Journey</a></li>
-                <li><a href="#skills">Skills & Expertise</a></li>
                 <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+               
             </ul>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/ijlal-ansari-56b0371b0" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -71,26 +70,72 @@
 
 
   
+    <div class="container" id="project">
+        <h2>Project Information Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Details</th>
+                <th>Tech stack</th>
+            </tr>
+            <tr>
+                <td>Number Guessing Game
+                </td>
+                <td>An interactive game where the computer selects a random number within a specified range, and the player has to guess the number. The game provides feedback if the guess is too high or too low until the correct number is guessed.</td>
+                <td>Python</td>
+            </tr>
+            <tr>
+                <td>Todo List</td>
+                <td>An interactive game where the computer selects a random number within a specified range, and the player has to guess the number. The game provides feedback if the guess is too high or too low until the correct number is guessed.</td>
+                <td>Python</td>
+            </tr>
+            
+            <tr>
+                <td>Password Generator</td>
+                <td> A tool that generates strong, random passwords for users based on specified criteria, such as length and inclusion of special characters. It aims to enhance security by creating complex passwords.</td>
+                <td>Python</td>
+            </tr>
+            
+            <tr>
+                <td>Environment Website</td>
+                <td>A website designed to promote environmental awareness and provide information on climate change, sustainability practices, and eco-friendly initiatives. The website features sections for educational content, tips for reducing carbon footprint, and resources for further reading.</td>
+                <td>HTML, CSS, JavaScript</td>
+            </tr>
+        </table>
+    
+        <h2>Submit Your Remarks</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <label for="project">Select Project:</label>
+            <select id="project" name="project">
+                <option value="password-generator">Password Generator</option>
+                <option value="number-guessing-game">Number Guessing Game</option>
+                <option value="todo-list">To-Do List</option>
+                <option value="environment-website">Environment Website</option>
+            </select>
+    
+            <label for="remarks">Remarks:</label>
+            <textarea id="remarks" name="remarks" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
 
-
-
-    <section id="projects" class="content-section">
-        <h2>My Projects</h2>
-        <div id="projects-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Project Name</th>
-                        <th>Description</th>
-                        <th>Link</th>
-                    </tr>
-                </thead>
-                <tbody id="projects-table-body">
-                    <!-- Projects will be loaded here by JavaScript -->
-                </tbody>
-            </table>
-        </div>
-    </section>
+    
+    
     
     <footer>
         <div class="footer-content">
@@ -103,6 +148,6 @@
         </div>
     </footer>
     
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
 </body>
 </html>

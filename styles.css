@@ -105,7 +105,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 150px 20px;
-    background-image: url('/freelance-work-7308505_1920.png');
+    background-image: url('/programming-8450423_1920.png');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -184,29 +184,64 @@ header {
 
 /* Projects Table */
 /* Projects Table */
-#projects-container {
-    overflow-x: auto;
+#projects {
+    margin-top: 50px;
 }
 
-#projects-container table {
+#projects table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#projects-container table th, #projects-container table td {
+#projects th, #projects td {
     padding: 12px;
     border: 1px solid #ddd;
     text-align: left;
 }
 
-#projects-container table th {
+#projects th {
     background-color: #f4f4f4;
     color: #333;
 }
+
+/* Form Submission Section */
+#form-submission {
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc5200;
+}
+
 
 
 /* Footer Styles */
@@ -240,4 +275,47 @@ footer {
 
 .social-links-footer a:hover {
     color: #f4f4f4;
+}
+
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select, textarea, button {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
